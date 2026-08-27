@@ -1,32 +1,3 @@
-## New FIRMS hotspots inside polygon
+## FIRMS hotspot watch
 
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.86802, 21.17177` — FRP `5.41` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.87547, 21.17449` — FRP `2.62` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.92363, 21.06874` — FRP `4.67` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.92607, 21.06264` — FRP `9.02` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.92693, 21.06761` — FRP `4.01` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.92852, 21.05653` — FRP `9.02` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.92937, 21.0615` — FRP `9.02` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.93023, 21.06648` — FRP `4.01` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA21_NRT** — 2026-08-25 1119 UTC — `44.93394, 21.05711` — FRP `46.09` MW — confidence `h` — severity **high**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 48 UTC — `44.86806, 21.06541` — FRP `1.08` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 48 UTC — `44.86892, 21.0605` — FRP `1.08` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 48 UTC — `44.89144, 21.14357` — FRP `0.66` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 48 UTC — `44.92168, 21.07054` — FRP `0.74` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 48 UTC — `44.92254, 21.06562` — FRP `0.74` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.86718, 21.17507` — FRP `9.01` MW — confidence `h` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.87167, 21.17575` — FRP `12.14` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.92803, 21.05475` — FRP `46.21` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.92952, 21.05975` — FRP `46.21` MW — confidence `l` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.93101, 21.06476` — FRP `37.59` MW — confidence `l` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.93477, 21.05663` — FRP `25.81` MW — confidence `n` — severity **medium**
-- **VIIRS_NOAA20_NRT** — 2026-08-25 1032 UTC — `44.93626, 21.06163` — FRP `22.68` MW — confidence `l` — severity **medium**
-- **VIIRS_SNPP_NRT** — 2026-08-25 28 UTC — `44.8675, 21.06461` — FRP `2.1` MW — confidence `n` — severity **medium**
-- **VIIRS_SNPP_NRT** — 2026-08-25 28 UTC — `44.92172, 21.07133` — FRP `0.8` MW — confidence `n` — severity **medium**
-- **VIIRS_SNPP_NRT** — 2026-08-25 28 UTC — `44.92241, 21.06536` — FRP `0.8` MW — confidence `n` — severity **medium**
-- **VIIRS_SNPP_NRT** — 2026-08-25 1013 UTC — `44.92603, 21.05602` — FRP `16.3` MW — confidence `n` — severity **medium**
-- **VIIRS_SNPP_NRT** — 2026-08-25 1013 UTC — `44.92947, 21.06524` — FRP `16.3` MW — confidence `h` — severity **high**
-- **VIIRS_SNPP_NRT** — 2026-08-25 1013 UTC — `44.93599, 21.06045` — FRP `16.3` MW — confidence `h` — severity **high**
-- **MODIS_NRT** — 2026-08-25 803 UTC — `44.91818, 21.06712` — FRP `6.83` MW — confidence `37` — severity **low**
-- **MODIS_NRT** — 2026-08-25 803 UTC — `44.92733, 21.0702` — FRP `93.79` MW — confidence `99` — severity **high**
-- **MODIS_NRT** — 2026-08-25 803 UTC — `44.92968, 21.05647` — FRP `80.04` MW — confidence `98` — severity **high**
+No new hotspots inside polygon at 2026-08-27T12:04:09.316012+00:00.
