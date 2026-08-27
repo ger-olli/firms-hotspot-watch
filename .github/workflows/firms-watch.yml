@@ -27,7 +27,7 @@ jobs:
       - name: Query FIRMS and filter polygon
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
-          FIRMS_LOOKBACK_DAYS: "1"
+          FIRMS_LOOKBACK_DAYS: "3"
         run: python watch.py
 
       - name: Publish status files
