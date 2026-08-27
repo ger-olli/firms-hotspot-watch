@@ -37,7 +37,7 @@ SOURCES = [
     "LANDSAT_NRT",
 ]
 
-LOOKBACK_DAYS = os.environ.get("FIRMS_LOOKBACK_DAYS", "1")
+LOOKBACK_DAYS = os.environ.get("FIRMS_LOOKBACK_DAYS", "3")
 STATE_PATH = Path("data/seen.json")
 STATUS_PATH = Path("data/status.json")
 EVENTS_PATH = Path("data/events.jsonl")
@@ -68,6 +68,17 @@ def parse_float(v):
     try:
         return float(v)
     except Exception:
+        return None
+
+def parse_acq_datetime(row):
+    """Return FIRMS acquisition time as aware UTC datetime when possible."""
+    date = str(row.get("acq_date", "")).strip()
+    time = str(row.get("acq_time", "")).strip().zfill(4)
+    if not date or len(time) != 4 or not time.isdigit():
+        return None
+    try:
+        return datetime.strptime(date + time, "%Y-%m-%d%H%M").replace(tzinfo=timezone.utc)
+    except ValueError:
         return None
 
 def fetch_source(source):
@@ -117,6 +128,7 @@ def main():
         "checked_at_utc": now.isoformat(),
         "polygon": list(POLYGON.exterior.coords),
         "bbox": BBOX,
+        "lookback_days": int(LOOKBACK_DAYS),
         "sources": {},
         "new_hotspots": [],
         "errors": [],
@@ -132,7 +144,14 @@ def main():
             run["errors"].append({"source": source, "error": str(e)})
             continue
 
+        latest_returned = None
+        for row in rows:
+            dt = parse_acq_datetime(row)
+            if dt is not None and (latest_returned is None or dt > latest_returned):
+                latest_returned = dt
+
         inside = []
+        latest_inside = None
         for row in rows:
             lat = parse_float(row.get("latitude"))
             lon = parse_float(row.get("longitude"))
@@ -140,6 +159,10 @@ def main():
                 continue
             if not POLYGON.contains(Point(lon, lat)) and not POLYGON.touches(Point(lon, lat)):
                 continue
+
+            dt = parse_acq_datetime(row)
+            if dt is not None and (latest_inside is None or dt > latest_inside):
+                latest_inside = dt
 
             key = norm_key(row, source)
             item = dict(row)
@@ -149,6 +172,8 @@ def main():
             item["_key"] = key
             inside.append(item)
 
+            # seen.json prevents historical hits in the 3-day window from
+            # being reported more than once across workflow runs.
             if key not in seen:
                 all_new.append(item)
                 seen.add(key)
@@ -157,6 +182,8 @@ def main():
             "ok": True,
             "records_returned": len(rows),
             "inside_polygon": len(inside),
+            "latest_measurement_utc": latest_returned.isoformat() if latest_returned else None,
+            "latest_measurement_inside_polygon_utc": latest_inside.isoformat() if latest_inside else None,
         }
 
     run["new_hotspots"] = all_new
