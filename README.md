@@ -36,6 +36,8 @@ Falls eine Quelle bei FIRMS für die Area API nicht verfügbar ist, wird der Feh
 
 ## Intervall
 
+Der Workflow fragt standardmäßig die letzten **3 Tage** ab, meldet dank `seen.json` aber jeden Hotspot nur einmal.
+
 Der Workflow ist auf
 
 ```yaml
@@ -101,3 +103,13 @@ pip install -r requirements.txt
 export FIRMS_MAP_KEY="..."
 python watch.py
 ```
+
+
+## Quellen-Aktualität in status.json
+
+Für jede erfolgreiche FIRMS-Quelle werden zusätzlich gespeichert:
+
+- `latest_measurement_utc` – neuester Zeitstempel aller von FIRMS für die Bounding Box zurückgegebenen Treffer.
+- `latest_measurement_inside_polygon_utc` – neuester Treffer innerhalb des eigentlichen Polygons.
+
+Wenn eine Quelle `records_returned: 0` liefert, stehen diese Werte auf `null`. Das bedeutet: Im abgefragten 3-Tage-Fenster wurde von dieser Quelle kein Hotspot in der Bounding Box zurückgegeben; es ist nicht automatisch ein Hinweis auf einen technischen Fehler.
