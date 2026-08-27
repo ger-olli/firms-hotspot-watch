@@ -1,4 +1,56 @@
 {
-  "status": "not_run_yet",
-  "note": "Run the GitHub Action after setting FIRMS_MAP_KEY."
+  "checked_at_utc": "2026-08-27T11:45:41.381478+00:00",
+  "polygon": [
+    [
+      21.30252,
+      44.83812
+    ],
+    [
+      21.21291,
+      44.79014
+    ],
+    [
+      20.99648,
+      44.89789
+    ],
+    [
+      21.10188,
+      44.96886
+    ],
+    [
+      21.30252,
+      44.83812
+    ]
+  ],
+  "bbox": "20.99648,44.79014,21.30252,44.96886",
+  "sources": {
+    "VIIRS_NOAA21_NRT": {
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0
+    },
+    "VIIRS_NOAA20_NRT": {
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0
+    },
+    "VIIRS_SNPP_NRT": {
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0
+    },
+    "MODIS_NRT": {
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0
+    },
+    "LANDSAT_NRT": {
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0
+    }
+  },
+  "new_hotspots": [],
+  "errors": [],
+  "new_hotspot_count": 0
 }

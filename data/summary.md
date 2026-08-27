@@ -1,3 +1,3 @@
-# FIRMS hotspot watch
+## FIRMS hotspot watch
 
-Noch kein Lauf ausgeführt.
+No new hotspots inside polygon at 2026-08-27T11:45:41.381478+00:00.
