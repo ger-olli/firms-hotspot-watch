@@ -1,9 +1,9 @@
 name: FIRMS Hotspot Watch
 
 on:
-  schedule:
-    - cron: "3,13,23,33,43,53 * * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -34,10 +34,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/status.json data/seen.json data/events.jsonl data/summary.md || true
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Update FIRMS hotspot status"
+            git pull --rebase origin main
             git push
           fi
