@@ -30,12 +30,15 @@ jobs:
           FIRMS_LOOKBACK_DAYS: "3"
         run: python watch.py
 
+      - name: Build persistent 24h event window
+        run: python build_recent_events.py --events data/events.jsonl --output data/recent_events.json --hours 24
+
       - name: Publish status files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/status.json data/seen.json data/events.jsonl data/summary.md || true
+          git add data/status.json data/seen.json data/events.jsonl data/recent_events.json data/summary.md || true
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
