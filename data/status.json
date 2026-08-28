@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-08-27T12:04:09.316012+00:00",
+  "checked_at_utc": "2026-08-28T10:08:05.960034+00:00",
   "polygon": [
     [
       21.30252,
@@ -27,31 +27,31 @@
   "sources": {
     "VIIRS_NOAA21_NRT": {
       "ok": true,
-      "records_returned": 11,
-      "inside_polygon": 9,
-      "latest_measurement_utc": "2026-08-25T11:19:00+00:00",
-      "latest_measurement_inside_polygon_utc": "2026-08-25T11:19:00+00:00"
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "VIIRS_NOAA20_NRT": {
       "ok": true,
-      "records_returned": 13,
-      "inside_polygon": 12,
-      "latest_measurement_utc": "2026-08-25T10:32:00+00:00",
-      "latest_measurement_inside_polygon_utc": "2026-08-25T10:32:00+00:00"
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "VIIRS_SNPP_NRT": {
       "ok": true,
-      "records_returned": 7,
-      "inside_polygon": 6,
-      "latest_measurement_utc": "2026-08-25T10:13:00+00:00",
-      "latest_measurement_inside_polygon_utc": "2026-08-25T10:13:00+00:00"
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "MODIS_NRT": {
       "ok": true,
-      "records_returned": 3,
-      "inside_polygon": 3,
-      "latest_measurement_utc": "2026-08-25T08:03:00+00:00",
-      "latest_measurement_inside_polygon_utc": "2026-08-25T08:03:00+00:00"
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "LANDSAT_NRT": {
       "ok": true,
