@@ -1,3 +1,3 @@
 ## FIRMS hotspot watch
 
-No new hotspots inside polygon at 2026-08-28T20:57:13.964463+00:00.
+No new hotspots inside polygon at 2026-08-28T21:07:17.268781+00:00.
