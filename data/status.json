@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-08-30T01:01:01.518962+00:00",
+  "checked_at_utc": "2026-08-30T01:07:11.337613+00:00",
   "polygon": [
     [
       21.30252,
@@ -26,48 +26,42 @@
   "lookback_days": 3,
   "sources": {
     "VIIRS_NOAA21_NRT": {
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_NOAA21_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "VIIRS_NOAA20_NRT": {
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_NOAA20_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "VIIRS_SNPP_NRT": {
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_SNPP_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "MODIS_NRT": {
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/MODIS_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     },
     "LANDSAT_NRT": {
-      "ok": false,
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/LANDSAT_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "ok": true,
+      "records_returned": 0,
+      "inside_polygon": 0,
+      "latest_measurement_utc": null,
+      "latest_measurement_inside_polygon_utc": null
     }
   },
   "new_hotspots": [],
-  "errors": [
-    {
-      "source": "VIIRS_NOAA21_NRT",
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_NOAA21_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "source": "VIIRS_NOAA20_NRT",
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_NOAA20_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "source": "VIIRS_SNPP_NRT",
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/VIIRS_SNPP_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "source": "MODIS_NRT",
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/MODIS_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    },
-    {
-      "source": "LANDSAT_NRT",
-      "error": "HTTPSConnectionPool(host='firms.modaps.eosdis.nasa.gov', port=443): Max retries exceeded with url: /api/area/csv/5bdb1cdabb792045357cb471c86ad48e/LANDSAT_NRT/20.99648,44.79014,21.30252,44.96886/3 (Caused by NewConnectionError(\"HTTPSConnection(host='firms.modaps.eosdis.nasa.gov', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-    }
-  ],
+  "errors": [],
   "new_hotspot_count": 0
 }
